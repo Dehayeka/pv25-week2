@@ -14,7 +14,6 @@ class RegistrationForm(QWidget):
         
         main_layout = QVBoxLayout()
         
-        # Identitas Section
         identity_group = QGroupBox("Identitas (vertical box layout)")
         identity_layout = QVBoxLayout()
         identity_text = QTextEdit("Nama : nama_anda\nNim : nim_anda\nKelas : kelas_anda")
@@ -22,7 +21,6 @@ class RegistrationForm(QWidget):
         identity_layout.addWidget(identity_text)
         identity_group.setLayout(identity_layout)
         
-        # Navigation Section
         nav_group = QGroupBox("Navigation (horizontal box layout)")
         nav_layout = QHBoxLayout()
         home_btn = QPushButton("Home")
@@ -33,7 +31,6 @@ class RegistrationForm(QWidget):
         nav_layout.addWidget(contact_btn)
         nav_group.setLayout(nav_layout)
         
-        # User Registration Section
         reg_group = QGroupBox("User Registration (form layout)")
         reg_layout = QFormLayout()
         full_name = QLineEdit()
@@ -55,7 +52,6 @@ class RegistrationForm(QWidget):
         reg_layout.addRow("Country:", country)
         reg_group.setLayout(reg_layout)
         
-        # Actions Section
         action_group = QGroupBox("Actions (horizontal box layout)")
         action_layout = QHBoxLayout()
         submit_btn = QPushButton("Submit")
@@ -64,7 +60,6 @@ class RegistrationForm(QWidget):
         action_layout.addWidget(cancel_btn)
         action_group.setLayout(action_layout)
         
-        # Add sections to main layout
         main_layout.addWidget(identity_group)
         main_layout.addWidget(nav_group)
         main_layout.addWidget(reg_group)
